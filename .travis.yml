@@ -9,11 +9,11 @@ script:
   - docker run -e CI=true sanchitverma/docker-react npm run test
 
 deploy:
-  provider:elasticbeanstalk
-  region:"us-east-2"
-  app:"docker-react"
-  environment:"DockerReact-env"
-  bucket_name:"elasticbeanstalk-us-east-2-935231101206"
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "docker-react"
+  environment: "DockerReact-env"
+  bucket_name: "elasticbeanstalk-us-east-2-935231101206"
   bucket_path: "docker-react"
   on:
     branch: master
