@@ -7,9 +7,6 @@ before_install:
 
 script:
   - docker run -e CI=true sanchitverma/docker-react npm run test
-branches:
-  only:
-    master
 
 deploy:
   provider:"elasticbeanstalk"
